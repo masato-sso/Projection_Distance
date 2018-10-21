@@ -1,7 +1,7 @@
 # Projection_Distance
 ## 改良投影距離法による手書き数字認識
 
-パターン認識のための学習ー基礎と応用ー論文小特集に取り上げられた論文「ベイズアプローチによる最適識別系の有限標本効果に関する考察ーー学習標本の大きさがクラス間で異なる場合ーー」を参考にした。手書き数字のデータはIPTP CDROM1Bを使用した。
+パターン認識のための学習ー基礎と応用ー論文小特集に取り上げられた論文「ベイズアプローチによる最適識別系の有限標本効果に関する考察ーー学習標本の大きさがクラス間で異なる場合ーー」を参考にした. また, 手書き数字のデータはIPTP CDROM1Bを使用した.
 
 ### IPTP CDROM1Bデータ
 各画像データは1サンプルの手書き数字の2値画像を格納している. 画像サイズは縦120,
@@ -18,5 +18,15 @@
 ・濃淡画像変換
 白黒の 2 値だけで表されていた画像に対して, 灰色も含めて表す画像を濃淡画像と呼ぶ.具体的には, 色の連続した変化(濃度値)を8bitの0〜255の256レベルに量子化したも のである. また, 各濃度値に対応した濃淡度合いを表し, 2値画像に比べて豊かに画像を 表現することができる.
   
+### 改良投影距離距離法
+改良投影距離法は全てのクラスで
+<img src="https://latex.codecogs.com/gif.latex?\;\left|\Sigma_{N}\right|"/>
+,
+<img src="https://latex.codecogs.com/gif.latex?\;P(\omega)"/>
+,
+<img src="https://latex.codecogs.com/gif.latex?\;N"/>
+,
+<img src="https://latex.codecogs.com/gif.latex?\;N_{0}"/>
+が等しいと仮定すると, 次式で定義される改良投影距離によって, 擬似ベイズ識別関数を近似することができる.
 <img src="https://latex.codecogs.com/gif.latex?\;g(x)=\|X-M\|^{2}-\sum_{i=1}^{k}\frac{(1-\alpha)\lambda_{i}}{(1-\alpha)\lambda_{i}+\alpha\sigma^{2}}\left\{\Phi_{i}^{T}(X-M)\right\}^{2}"/>
-<img src="https://latex.codecogs.com/gif.latex?\;x[k]" />
+

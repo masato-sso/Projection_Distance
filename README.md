@@ -28,5 +28,6 @@
 ,
 <img src="https://latex.codecogs.com/gif.latex?\;N_{0}"/>
 が等しいと仮定すると, 次式で定義される改良投影距離によって, 擬似ベイズ識別関数を近似することができる.
+  
 <img src="https://latex.codecogs.com/gif.latex?\;g(x)=\|X-M\|^{2}-\sum_{i=1}^{k}\frac{(1-\alpha)\lambda_{i}}{(1-\alpha)\lambda_{i}+\alpha\sigma^{2}}\left\{\Phi_{i}^{T}(X-M)\right\}^{2}"/>
 

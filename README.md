@@ -19,4 +19,4 @@
 白黒の 2 値だけで表されていた画像に対して, 灰色も含めて表す画像を濃淡画像と呼ぶ.具体的には, 色の連続した変化(濃度値)を8bitの0〜255の256レベルに量子化したも のである. また, 各濃度値に対応した濃淡度合いを表し, 2値画像に比べて豊かに画像を 表現することができる.
   
 <img src="https://latex.codecogs.com/gif.latex?;g ( x ) = \| X - M \| ^ { 2 } - \sum _ { i = 1 } ^ { k } \frac { ( 1 - \alpha ) \lambda _ { i } } { ( 1 - \alpha ) \lambda _ { i } + \alpha \sigma ^ { 2 } } \left\{ \Phi _ { i } ^ { T } ( X - M ) \right\} ^ { 2 }"/>
-<img src="https://latex.codecogs.com/gif.latex?\inline&space;x[k]" />
+<img src="https://latex.codecogs.com/gif.latex?\;x[k]" />
